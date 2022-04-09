@@ -1,0 +1,23 @@
+<ion-content>
+
+<ion-tabs>
+    <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="qlock">
+            <ion-icon name="time"></ion-icon>
+            <ion-label>Qlock</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="settings">
+            <ion-icon name="settings"></ion-icon>
+            <ion-label>Einstellungen</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="about" (click)="presentActionSheet()">
+            <ion-icon name="information-circle"></ion-icon>
+            <ion-label>Links</ion-label>
+        </ion-tab-button>
+    </ion-tab-bar>
+</ion-tabs>
+
+
+</ion-content>

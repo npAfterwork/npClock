@@ -1,0 +1,25 @@
+<ion-content>
+    <ion-list *ngIf="config">
+        <ion-item>
+            <ion-label>Minuten-Ecken</ion-label>
+            <ion-toggle [(ngModel)]="config.showCorners" (ngModelChange)="save()"></ion-toggle>
+        </ion-item>
+        <ion-item>
+            <ion-label [class.active]="!config.deDreiviertel">Viertel vor</ion-label>
+            <ion-toggle [(ngModel)]="config.deDreiviertel" (ngModelChange)="save()"></ion-toggle>
+            <ion-label [class.active]="config.deDreiviertel" class="ion-text-right">Dreiviertel</ion-label>
+        </ion-item>
+
+        <ion-item>
+            <ion-label [class.active]="!config.deZwanzigNach">Zehn vor halb</ion-label>
+            <ion-toggle [(ngModel)]="config.deZwanzigNach" (ngModelChange)="save()"></ion-toggle>
+            <ion-label [class.active]="config.deZwanzigNach" class="ion-text-right">Zwanzig nach</ion-label>
+        </ion-item>
+
+        <ion-item>
+            <ion-label [class.active]="!config.deZwanzigVor">Zehn nach halb</ion-label>
+            <ion-toggle [(ngModel)]="config.deZwanzigVor" (ngModelChange)="save()"></ion-toggle>
+            <ion-label [class.active]="config.deZwanzigVor" class="ion-text-right">Zwanzig vor</ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>
