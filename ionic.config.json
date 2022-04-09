@@ -1,0 +1,7 @@
+{
+  "name": "qlock",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
